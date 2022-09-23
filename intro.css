@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    margin-top: -51px;
+    position: fixed;
+    background-color: rgb(216, 209, 209); 
+  /*  width: 300px; */ 
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+} 
+
+.sidebar nav {
+    padding: 45px;
+    font-size: 20px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none; /* removes underline of the hyperlink*/
+    color: black;
+}
+
+.main {
+   /* background-color: yellow;*/
+    width: 90vw;
+}
+
+.container {
+   position: inherit; 
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 15px;
+}
+
+.intro {
+    margin: 50px 88px;
+}
+
+.intro h2 {
+    color: aliceblue;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 40px;
+    background-color: rgb(122, 37, 201);
+    padding: 0 10px;
+    border-radius: 8px;
+    margin-right: 86%;
+    border-color: black;
+    border: 2px solid rgb(40, 177, 75);
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skillContainer {
+    padding: 12px;
+    padding-bottom: 68px;
+}
+
+.skillItems{
+    display: flex;
+    align-items: center; 
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundered {
+    width: 265px;
+    background-color: blueviolet;
+}
+
+.fiifty {
+    width: 125px;
+    background-color: aqua;
+}
+
+.tS {
+    width: 75px;
+    background-color: yellow;
+}
+
+
+.sidebarGo {
+    transform: translate(-300px, 0);
+   /* display: none; */
+    position: absolute;
+}
+
+.hamburger{
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+
+.ham {
+    position: fixed;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.cross{
+  /*  margin-top: 8px ; */
+    margin-left: 115px;
+}
+
+@media (max-width: 900px) {
+    *{
+       /* background-color: red; */
+    }
+    .devPic {
+        display: none;
+    }
+
+    .intro {
+        margin: 50px 8px;
+    }
+
+    .intro h2 {
+        margin-right: 130px;
+    }
+    
+      /* div.sidebar {
+        display: none;
+        position: absolute; 
+     } */
+   }
+
+   @media (max-width: 768px) {
+    .intro h2 {
+        margin-right: 441px;
+    }
+   }
+
+   @media (max-width: 600px) {
+    .intro h2 {
+        margin-right: 117px;
+    }
+   }
+
+/*FOOTER*/
+
+.full{
+    background-color: rgb(27, 8, 8);
+  /*  position: inherit; */
+    left: 0;
+    right: 0;
+    height: auto;
+   /* width: 100vw; */
+    padding-top: 4px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(189, 178, 178);
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 2rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(189, 178, 178);
+    border: 2.2px solid rgb(189, 178, 178);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer-menu{
+    margin-bottom: 20px;
+  }
+
+  .footer-menu ul{
+    display: flex;
+  }
+
+  .footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+  }
+
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    border: 1px solid white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+
+  .footer-bottom{
+    background: #000;
+    width: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-bottom .copy {
+    font-size: 10px;
+}
+
+.footer-bottom p{
+    color: #9ba5a5;
+    text-align: center;
+    font-size: 15px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a{
+    color: #5090a9;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media (max-width:700px) {
+    .footer-menu ul {
+      display: inline;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-bottom{
+      /*  display: inline; */ 
+        padding: absolute;
+        padding-bottom: 5px;
+    }
+
+    .footer-bottom p{
+        font-size: 10px;
+    }
+
+    .footer-bottom p a{
+        font-size: 10px;
+    }
+
+    .footer-menu ul li {
+      margin-bottom: 20px;
+    }
+}
